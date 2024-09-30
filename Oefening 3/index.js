@@ -1,45 +1,23 @@
-//let i = parseInt(prompt("raad het getal"));
-//switch (treu) {
-//    case (i <= 4):
-//        console.log(`Het getal ${i} is te klein`)
-//        break;
-//    case (i < 10):
-//        if (i <= 4)
-//            console.log (`Het getal ${i} is te klein`)
-//        else (i = 5)
-//        console.log(i)
-//        break;
-//    default (i = 5)
-//        console.log(i)
-//}
+let a = parseInt(prompt("geef getal"))
+let b = parseInt(prompt("geef getal"))
+let c = parseInt(prompt("geef getal"))
 
-//let eindgetal = 7
-//let ingevoerdegetal = parseInt(prompt("getal?"))
-//
-//while (eindgetal!==ingevoerdegetal){
-//    if (eindgetal<ingevoerdegetal)
-//        console.log("groter")
-//    else
-//}
-
-// dit werkt maar is niet juiste manier
-//let i = parseInt(prompt("geef een getal"))
-//let r = 2
-//console.log(1)
-//while (r <=i){
-//    r = r*r
-//    console.log(r)
-//}
-
-let grens = parseInt(prompt("voer een getal"));
-let getal = 1
-
-while(getal <= grens){
-    console.log(getal);
-    if(getal === 1){
-        getal = getal * 4;
-    }else{
-        getal = getal ** 2;
+if (a>=b && a>=c){
+    if (b>=c){
+        console.log(`${a} dan ${b} dan pas ${c}`)
+    }if (b<=c){
+        console.log(`${a} dan ${c} dan pas ${b}`)
     }
-
+}else if (b>=a && b>=c){
+    if (a>=c){
+        console.log(`${b} dan ${a} dan pas ${c}`)
+    }if (c>=a){
+        console.log(`${b} dan ${c} dan pas ${a}`)
+    }
+}else if (c>=a && c>=b){
+    if (b>a){
+        console.log(`${c} dan ${b} dan pas ${a}`)
+    }if (a>b){
+        console.log(`${c} dan ${a} dan pas ${b}`)
+    }
 }
